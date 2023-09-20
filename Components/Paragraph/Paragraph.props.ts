@@ -6,5 +6,5 @@ export interface IParagraphProps
     HTMLParagraphElement
   > {
   children: ReactNode;
-  size: 16 | 24 | 32;
+  size: "s" | "m" | "l";
 }
