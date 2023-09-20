@@ -4,7 +4,7 @@ import cn from "classnames";
 import { IParagraphProps } from "./Paragraph.props";
 
 const Paragraph = ({ size, children }: IParagraphProps): JSX.Element => {
-  return <p className={cn(styles.Paragraph, styles[size])}>Paragraph</p>;
+  return <p className={cn(styles.Paragraph, styles[size])}>{children}</p>;
 };
 
 export default Paragraph;
