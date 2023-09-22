@@ -1,10 +1,13 @@
 import Button from "@/Components/Button/Button";
 import Paragraph from "@/Components/Paragraph/Paragraph";
+import Rating from "@/Components/Rating/Rating";
 import Tag from "@/Components/Tag/Tag";
 import Titles from "@/Components/Titles/Titles";
-import React from "react";
+import React, { useState } from "react";
 
 const Home = (): JSX.Element => {
+  const [rating, setRaing] = useState<number>(2);
+
   return (
     <>
       <Titles tag='h1'>Suchi Bonsai!</Titles>
@@ -31,6 +34,7 @@ const Home = (): JSX.Element => {
       <Tag color='primary' size='m'>
         Green
       </Tag>
+      <Rating rating={rating} isEditable setRating={setRaing} />
     </>
   );
 };
